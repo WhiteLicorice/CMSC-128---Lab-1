@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello, world!!!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="/global.css" />
+</head>
+<body>
+    <h1 id = "header" >Login</h1></h1>
+    <% if (message) { %>
+      <h2><%= message %> </h2>
+    <% } %>
+    <form action="/login" method = "POST">
+        <label for="userName">Username:</label><br>
+        <input type="text" id = "userName" name = "userName" value="John" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name = "password" value="examplepassword" required><button id = "show" type = "button">X</button>
+        <br>
+        <button id = "login" type = "submit">Login</button>
+        <br>
+        <br>
+        <br>
+    </form>
+    <button id = "register" onclick = "window.location.href = '/register'">
+      Register
+    </button>
+    <script src = "/global.js"></script>
+</body>
+</html>
